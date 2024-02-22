@@ -23,32 +23,47 @@ def problem_2():
     print(f"The total is: {horas*costo}")
 
 
-def problema_3():
-    lista = ["Enrique", 20, 0, "Jesus", 20, 0, "Saturn", 20, 0, "Aldo", 20, 0, "Lalo", 20, 0, "Nacho", 20, 0,]
-    print([y for x,y in enumerate(lista) if x%3 == 0])
-
+def problem_3():
+    """
+    Get name and salary for every worker.
+    """
+    # create list
+    list = ["Enrique", 20, 2, "Jesus", 20, 5, "Saturn", 20, 6, "Aldo", 20, 9, "Lalo", 20, 8, "Nacho", 20, 1]
+    
+    # get names an salaries
+    names = [y for x,y in enumerate(list) if x%3 == 0]
+    i = 0
+    salary = 1
+    for x,y in enumerate(list):
+        if x%3 != 0:
+            salary *= y
+        else:
+            print(f"The salary for {names[i]} is {salary}")
+            i += 1
+            salary = 1
+            
 
 def problem_4():
     """
-    Obtener promedio de los numeros pares y el producto de los impares
+    Get median of the pair nums and product of odd
     """
-    # crear lista
-    lista = [random.randint(0,100) for _ in range(10)]
+    # create list
+    list = [random.randint(0,100) for _ in range(10)]
     
     # calcular el promedio de pares 
-    pares = [x for x in lista if x%2 == 0]
-    promedio = sum(pares)/len(pares)
+    pair = [x for x in list if x%2 == 0]
+    median = sum(pair)/len(pair)
 
     # calcular el producto de impares
-    impares = [x for x in lista if x%2 != 0]
-    producto = 1; [producto := producto * x for x in lista]
+    odd = [x for x in list if x%2 != 0]
+    product = 1; [product := product * x for x in list]
 
     print(f"""
-        La lista es la siguiente: {lista}.\n
-        Los pares son los siguientes: {pares}.\n
-        Los impares son los siguients: {impares}.\n
-        El promedio es: {promedio}.\n
-        El producto es: {producto}.\n
+        La lista es la siguiente: {list}.\n
+        Los pares son los siguientes: {pair}.\n
+        Los impares son los siguients: {odd}.\n
+        El promedio es: {median}.\n
+        El producto es: {product}.\n
           """)
     
 
@@ -80,11 +95,13 @@ def problem_5():
 def problem_6(length=5, obstacles=5):
     """
     Explorer robot.
+    Robot can only move down, left or right
     """
     # generate matrix
     matrix = [['o' for _ in range(length)] for _ in range(length)]
-    print(matrix)
     
+    # create unicode list
+    unicodes = ['\u2192', '\u2193', '\u2190', '\u2191']
     # add random obstacles
     i = 0
     while i < obstacles:
@@ -94,12 +111,33 @@ def problem_6(length=5, obstacles=5):
         if matrix[x][y] == "o" and (x,y) != (length-1, length-1):
             matrix[x][y] = "x"
             i  += 1
-    
-    # spawn robot
-    robot = (0,0)
 
-
+    # right, down, left, up
+    directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]  
+    # starting position
+    row, col = 0, 0  
+    while (row, col) != (length-1, length-1):
+        for i,direction in enumerate(directions):
+            new_row = row + direction[0]
+            new_col = col + direction[1]
+            if 0 <= new_row < length and 0 <= new_col < length and matrix[new_row][new_col] == 'o':
+                row, col = new_row, new_col
+                # mark with arrows
+                matrix[row][col] = unicodes[i]  # marking the path of the robot
+                break
+        else:
+            print("Destiny unreachable")
+            break
     
+    # marking the final destination
+    matrix[row][col] = 'R'  
+    # mark initial position with r
+    matrix[0][0] = "R"
+    
+    # print
+    print("Robot's path: \n")
+    for row in matrix:
+        print(row)
 
 if __name__ == "__main__":
     problem_6()
