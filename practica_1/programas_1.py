@@ -140,7 +140,7 @@ def problem_6(length=5, obstacles=5):
         print(row)
 
 if __name__ == "__main__":
-    p = int(input("From 1-6, which problem you'd like to see?"))
+    p = int(input("From 1-6, which problem you'd like to see? "))
     match p:
         case 1:
             problem_1()
