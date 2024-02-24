@@ -1,4 +1,3 @@
-
 # Introducción a Python
 
 Python es un lenguaje de programación de alto nivel, interpretado y de propósito general. Es conocido por su sintaxis simple y legible, lo que lo hace ideal para principiantes y también poderoso para desarrolladores experimentados. En esta introducción, exploraremos algunos conceptos fundamentales de Python.
@@ -57,3 +56,13 @@ if condicion:
 else:
     # Código a ejecutar si la condición es falsa
 ```
+## Explicación del código
+En este apartado se explicará la dinámica e idea de los programas escritos.
+
+### Programa 1: Suma de números.
+Para este programa, se usó la fórumula para sumar los números anteriores: `(n*(n+1))/2`. Por lo tanto, se usa un `print(f"")` para concatenar datos del tipo `string` con datos del tipo `int`.
+
+### Programa 2: Costo por hora.
+Para este programa, se tiene que calcular el costo de horas trabajadas. Se le pide al usuario datos que se tienen que convertir a int de la siguiente forma: `x = int(input("texto a imprimir")`. Después se multiplican las horas y el costo por hora para imprimir el resultado.
+
+### Programa 3: 
