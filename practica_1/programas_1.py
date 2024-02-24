@@ -140,4 +140,19 @@ def problem_6(length=5, obstacles=5):
         print(row)
 
 if __name__ == "__main__":
-    problem_6()
+    p = int(input("From 1-6, which problem you'd like to see?"))
+    match p:
+        case 1:
+            problem_1()
+        case 2:
+            problem_2()
+        case 3:
+            problem_3()
+        case 4:
+            problem_4()
+        case 5:
+            problem_5()
+        case 6:
+            problem_6()
+        case _:
+            print("Unrecognized value")
