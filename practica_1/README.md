@@ -65,4 +65,10 @@ Para este programa, se usó la fórumula para sumar los números anteriores: `(n
 ### Programa 2: Costo por hora.
 Para este programa, se tiene que calcular el costo de horas trabajadas. Se le pide al usuario datos que se tienen que convertir a int de la siguiente forma: `x = int(input("texto a imprimir")`. Después se multiplican las horas y el costo por hora para imprimir el resultado.
 
-### Programa 3: 
+### Programa 3: Trabajadores y salarios 
+Para este programa, se tiene que imprimir datos de una lista que contiene los nombres de los trabajadores, sus horas de trabajo y su salario por hora. Para ello, se crea previamente una lista, sabiendo que los nombres están en los lugares que son múltiplos de 3, dentro de un ciclo `for`, para obtener los índices y los valores, se usa la siguiente sintaxis: `for x,y in enumerate(lista)`. Una vez se obtiene el nombre, se imprime, y se multiplican las horas por el salario, para después volver el valor del salario a 1.
+
+### Programa 4: Promedio y producto
+Para este programa, se tiene una lista con 100 números aleatorios, dicha lista se declara usando el método `randint` la librería `random` de la siguiente forma: `[random.randint(0,100) for _ in range(10)]`. Una vez se tiene la lista, usando el operador `%`, se busca saber si es par o impar de la siguiente forma: `if x % 2 == 0`. Al tener una lista de pares y otra de impares, se suma la lisa de pares y se divide entre su tamaño, y la de impares se multiplica por las impares.
+
+### Programa 5: Adivinando el número
