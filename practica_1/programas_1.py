@@ -17,8 +17,8 @@ def problem_2():
     Work and time 1.
     """
     # get hours and cost
-    horas = int(input("Worked hours rounded to the nearest integer"))
-    costo = int(input("cost per hour as a float"))
+    horas = int(input("Worked hours rounded to the nearest integer: "))
+    costo = float(input("cost per hour as a float: "))
 
     print(f"The total is: {horas*costo}")
 
@@ -59,11 +59,11 @@ def problem_4():
     product = 1; [product := product * x for x in list]
 
     print(f"""
-        La lista es la siguiente: {list}.\n
-        Los pares son los siguientes: {pair}.\n
-        Los impares son los siguients: {odd}.\n
-        El promedio es: {median}.\n
-        El producto es: {product}.\n
+        This is the list: {list}.\n
+        These are the pairs: {pair}.\n
+        These are the odds: {odd}.\n
+        The average is: {median}.\n
+        The product is: {product}.\n
           """)
     
 
