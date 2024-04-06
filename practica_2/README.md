@@ -23,3 +23,20 @@ while not rospy.is_shutdown():
     pub.publish("hola Rocha")
     rate.sleep()
 ```
+
+### Listener
+`listener.py` es el programa encargado de recibir los datos de `talker.py` e imprimirlos en la consola. Para ello, éste igual se conecta al tópico `std_msgs.String`. Para que éste reciba los datos, primero se tiene que crear una función de llamado constante que se declara de la siguiente forma:
+
+```python
+def callback(msg):
+    rospy.loginfo(f"escuche : {msg}")
+```
+
+Ésta función se conecta al subscriptor, después de la creación del nodo de escucha.
+
+```python
+def listener():
+    node = rospy.init_node("listener", anonymous=False)
+    sub = rospy.Subscriber("chat", String, callback)
+    rospy.spin()
+```
