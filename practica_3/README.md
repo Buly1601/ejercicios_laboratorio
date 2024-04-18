@@ -11,6 +11,6 @@ DTG = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} $$
 ```
 El ATG se calcula con la siguiente fórmula:
 ```math
-ATG = \atantwo{(y_2 - y_1), (x_2 - x_1)}
+ATG = \arctan{(y_2 - y_1), (x_2 - x_1)}
 ```
 Esto se puede observar en el método `geometric_calculation()` dentro de la clase. Para obtener los valores que se desean obtener del usuario, `x2` y `y2` se usa el método `get_from_user()` el cual guarda en las variables `self.x2` y `self.y2` los valores del usuario.
