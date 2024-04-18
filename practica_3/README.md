@@ -14,3 +14,9 @@ El ATG se calcula con la siguiente fórmula:
 ATG = \arctan{(y_2 - y_1), (x_2 - x_1)}
 ```
 Esto se puede observar en el método `geometric_calculation()` dentro de la clase. Para obtener los valores que se desean obtener del usuario, `x2` y `y2` se usa el método `get_from_user()` el cual guarda en las variables `self.x2` y `self.y2` los valores del usuario.
+
+## Ejercicio 2
+Para este ejercicio, se pidió originar el turtlesim en las coordenadas que el usuario pidiera, es decir, spawnear la tortuga en donde se desee sin que haga algún tipo de movimiento. Para resolverlo, se siguieron los siguientes pasos:
+- Desaparecer a la tortuga original que nace en `(5,5)` usando `rospy.ServiceProxy('/kill', Kill)`.
+- Crear una tortuga nueva en las coordenadas que se desean usando `rospy.ServiceProxy('/spawn', Spawn)`.
+
