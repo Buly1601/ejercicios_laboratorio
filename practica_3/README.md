@@ -5,4 +5,6 @@ Los ejercicios se encuentran en el mismo archivo de Python: `geometrico.py`, en 
 
 ## Ejercicio 1
 Para este ejercicio, se pidió que se calculara y mostrara en pantalla la `Distance To Goal` y el `Angle To Goal`. El DTG se calcula con la siguiente fórmula:
-$$ \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} $$
+```math
+\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} $$
+```
