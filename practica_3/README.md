@@ -4,7 +4,13 @@ El control con ROS (Robot Operating System) se refiere a la utilización de este
 Los ejercicios se encuentran en el mismo archivo de Python: `geometrico.py`, en ella se encuentra la clase `GeometricTurtleSim` en la que se encuentran los ejercicios como métodos.
 
 ## Ejercicio 1
-Para este ejercicio, se pidió que se calculara y mostrara en pantalla la `Distance To Goal` y el `Angle To Goal`. El DTG se calcula con la siguiente fórmula:
+Para este ejercicio, se pidió que se calculara y mostrara en pantalla la `Distance To Goal` y el `Angle To Goal`. 
+El DTG se calcula con la siguiente fórmula:
 ```math
-\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} $$
+DTG = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} $$
 ```
+El ATG se calcula con la siguiente fórmula:
+```math
+ATG = \arctantwo{(y_2 - y_1), (x_2 - x_1)}
+```
+Esto se puede observar en el método `geometric_calculation()` dentro de la clase. Para obtener los valores que se desean obtener del usuario, `x2` y `y2` se usa el método `get_from_user()` el cual guarda en las variables `self.x2` y `self.y2` los valores del usuario.
