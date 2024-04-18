@@ -20,3 +20,5 @@ Para este ejercicio, se pidió originar el turtlesim en las coordenadas que el u
 - Desaparecer a la tortuga original que nace en `(5,5)` usando `rospy.ServiceProxy('/kill', Kill)`.
 - Crear una tortuga nueva en las coordenadas que se desean usando `rospy.ServiceProxy('/spawn', Spawn)`.
 
+## Ejercicio 3
+En TurtleSim, el controlador PID recibe una velocidad lineal `(linear_x)` y una velocidad angular `(angular_z)` como comandos de entrada. Estos comandos representan el movimiento deseado de la tortuga. Sin embargo, los motores que controlan el movimiento de la tortuga requieren velocidades de las ruedas `(left_wheel_vel y right_wheel_vel)`.
