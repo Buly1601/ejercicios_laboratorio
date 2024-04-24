@@ -10,3 +10,5 @@ Para ello, se tiene que inicializar PlotJuggler siguiendo los siguientes pasos:
 
 ### Ploteo de la posición y error del turtlesim
 Al correr el programa de la `practica_3`, se plotearon las siguientes gráficas:
+![X y Y del turtlesim hacia (0,0)](https://github.com/Buly1601/ejercicios_laboratorio/blob/main/practica_4/x%26y.png)
+
