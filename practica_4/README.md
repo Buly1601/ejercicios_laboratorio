@@ -7,3 +7,6 @@ Para ello, se tiene que inicializar PlotJuggler siguiendo los siguientes pasos:
 - Seguir los pasos de la `practica_3`.
 - En la ventana izquierda de PlotJuggler, dar click en `ROS topic subscriber` y seleccionar `/turtle1/ṕose`.
 - Seleccionar del árbol `x` y `y`. 
+
+### Ploteo de la posición y error del turtlesim
+Al correr el programa de la `practica_3`, se plotearon las siguientes gráficas:
