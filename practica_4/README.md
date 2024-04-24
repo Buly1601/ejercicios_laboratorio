@@ -16,3 +16,6 @@ Se puede observar en ella que los dos la velocidad de `X` y `Y` sube y baja de f
 
 ![Posición del turtlesim](https://github.com/Buly1601/ejercicios_laboratorio/blob/main/practica_4/xysim.png)
 Se puede observar que el comportamiento de la gráfica es igual al del turtlesim, se llega al punto deseado.
+
+### Plotear ATG y DTG
+Para este ejercicio, se 
