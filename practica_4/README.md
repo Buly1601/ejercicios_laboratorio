@@ -7,7 +7,7 @@ En esencia, el URDF proporciona una forma estándar de representar la geometría
 El URDF se utiliza para modelar robots tanto en simulaciones como en el mundo real. Es especialmente útil en el desarrollo y la simulación de aplicaciones robóticas, ya que permite a los desarrolladores visualizar y simular el comportamiento de los robots antes de implementarlos físicamente. Además, el URDF es compatible con herramientas de visualización como RViz, que permite a los usuarios visualizar el modelo del robot y realizar análisis cinemáticos.
 
 
-
+![Ejemplo de URDF](https://github.com/Buly1601/ejercicios_laboratorio/blob/main/practica_4/urdf.jpeg)
 
 
 ## PlotJuggler
