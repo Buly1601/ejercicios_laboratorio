@@ -1,4 +1,15 @@
 # URDF y PlotJuggler
+## URDF
+El URDF (Unified Robot Description Format) es un formato de archivo utilizado en ROS (Robot Operating System) para describir la estructura cinemática y visual de robots.
+
+En esencia, el URDF proporciona una forma estándar de representar la geometría del robot, así como su cinemática, es decir, la forma en que sus partes móviles están conectadas y pueden moverse en relación con otras partes. Esto incluye información sobre enlaces (links), articulaciones (joints), sensores y visualización.
+
+El URDF se utiliza para modelar robots tanto en simulaciones como en el mundo real. Es especialmente útil en el desarrollo y la simulación de aplicaciones robóticas, ya que permite a los desarrolladores visualizar y simular el comportamiento de los robots antes de implementarlos físicamente. Además, el URDF es compatible con herramientas de visualización como RViz, que permite a los usuarios visualizar el modelo del robot y realizar análisis cinemáticos.
+
+
+
+
+
 ## PlotJuggler
 Para este ejercicio se pidió graficar el movimiento, error y ATG y DGT usando la herramienta de [PlotJuggler](https://plotjuggler.io/).
 Para ello, se tiene que inicializar PlotJuggler siguiendo los siguientes pasos:
